@@ -39,20 +39,21 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen flex items-center justify-center bg-gray-100 p-6">
-      <div className="bg-white shadow-lg rounded-2xl p-8 w-full max-w-2xl">
-        <h1 className="text-2xl font-bold text-center mb-6 text-gray-800">
-          PrepWise AI
-        </h1>
-        <p className="text-center text-gray-500 mb-4">
-          Apna personalized study plan banayein
-        </p>
+            <main className="min-h-screen flex items-center justify-center bg-gray-100 p-6">
+              <div className="bg-white shadow-lg rounded-2xl p-8 w-full max-w-2xl">
+                <h1 className="text-2xl font-bold text-center mb-6 text-gray-800">
+                  PrepWise AI
+                </h1>
+              <p className="text-center text-gray-500 mb-4">
+                   Apna personalized study plan banayein
+              </p>
 
-        <div className="text-center mb-6">
-          <a href="/plans" className="text-blue-600 hover:underline text-sm">
-            View Saved Plans
-          </a>
-        </div>
+              <div className="text-center mb-6">
+          
+                  <a href="/plans" className="text-blue-600 hover:underline text-sm">
+                      View Saved Plans
+                  </a>
+             </div>
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
@@ -116,5 +117,5 @@ export default function Home() {
         )}
       </div>
     </main>
-  );
-}
+    );
+  }
