@@ -45,7 +45,7 @@ export default function Home() {
           PrepWise AI
         </h1>
         <p className="text-center text-gray-500 mb-4">
-          Apna personalized study plan banayein
+          Create your personalized study plan
         </p>
 
         <div className="text-center mb-6">

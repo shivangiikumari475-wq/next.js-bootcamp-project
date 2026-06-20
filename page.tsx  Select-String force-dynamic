@@ -1,0 +1,9 @@
+[33mcommit ab7804823c48f80a8fbf4c89dc36ec4a1d198ef0[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: shvangiikumari475-wq <shivangiikumari475@gmail.com>
+Date:   Sat Jun 20 11:58:40 2026 +0530
+
+    Fix dates and caching
+
+ app/api/generate/route.ts | 4 [32m+++[m[31m-[m
+ app/plans/page.tsx        | 1 [32m+[m
+ 2 files changed, 4 insertions(+), 1 deletion(-)
