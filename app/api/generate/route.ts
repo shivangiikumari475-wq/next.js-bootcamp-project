@@ -12,7 +12,9 @@ export async function POST(request: Request) {
       );
     }
 
-    const prompt = `Create a detailed day-by-day study plan for the subject "${subject}", covering these topics: ${topics}. The exam is on ${examDate}. Today's date can be assumed to be the current date. Break the plan into days, list which topics to cover each day, and keep it realistic and well-paced. Return the plan in clear, simple text with day-wise headings.`;
+   const today = new Date().toISOString().split("T")[0];
+
+const prompt = `Today's date is ${today}. Create a detailed day-by-day study plan for the subject "${subject}", covering these topics: ${topics}. The exam is on ${examDate}. Use the actual dates starting from today (${today}) for each day in the plan — do NOT use any other year or assume a different date. Break the plan into days, list which topics to cover each day, and keep it realistic and well-paced. Return the plan in clear, simple text with day-wise headings.`;
 
     const response = await fetch(
       "https://api.groq.com/openai/v1/chat/completions",
